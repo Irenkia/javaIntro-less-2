@@ -2,10 +2,10 @@ package org.example;
 
 public class App {
     public static void main(String[] args) {
-        forCheckingNumber();
+        forCheckNumberEvenOrOdd();
     }
 
-    public static void forCheckingNumber() {
+    public static void forCheckNumberEvenOrOdd() {
         int number1 = 22;
         System.out.println("\nLet's check if your number is even: ");
         System.out.println("Your number - " + number1);
