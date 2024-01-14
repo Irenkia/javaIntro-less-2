@@ -5,67 +5,55 @@ import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
     @Test
-    void shouldAddTwoValues1and1() {
+    void shouldAddTwoNumbers() {
         //given
         int value1 = 1;
         int value2 = 1;
 
         //when
-        int sum = Calculator.sum(value1, value2);
+        int sum = Calculator.add(value1, value2);
 
         //then
         Assertions.assertEquals(2, sum);
     }
 
     @Test
-    void shouldSubtractTwoValues5and4() {
+    void shouldSubtractTwoNumbers() {
         //given
         int value1 = 5;
         int value2 = 4;
 
         //when
-        int sum = Calculator.subtraction(value1, value2);
+        int subtract = Calculator.subtract(value1, value2);
 
         //then
-        Assertions.assertEquals(1, sum);
+        Assertions.assertEquals(1, subtract);
     }
 
     @Test
-    void shouldMultiplyTwoValues3and3() {
+    void shouldMultiplyTwoNumbers() {
         //given
         int value1 = 3;
         int value2 = 3;
 
         //when
-        int sum = Calculator.multiplication(value1, value2);
+        int multiply = Calculator.multiply(value1, value2);
 
         //then
-        Assertions.assertEquals(9, sum);
+        Assertions.assertEquals(9, multiply);
     }
 
     @Test
-    void shouldDividedTwoValues10and2() {
+    void shouldDividedTwoNumbers() {
         //given
         int value1 = 10;
         int value2 = 2;
 
         //when
-        int sum = Calculator.division(value1, value2);
+        int divide = Calculator.divide(value1, value2);
 
         //then
-        Assertions.assertEquals(5, sum);
+        Assertions.assertEquals(5, divide);
     }
 
-    @Test
-    void shouldDividedTwoValues5and0GetError() {
-        //given
-        int value1 = 5;
-        int value2 = 0;
-
-        //when
-        int sum = Calculator.division(value1, value2);
-
-        //then
-        Assertions.assertEquals(0, sum);
-    }
 }

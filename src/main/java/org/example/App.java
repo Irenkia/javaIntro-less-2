@@ -6,15 +6,14 @@ public class App {
     }
 
     public static void fromCalculator() {
-        int sum = Calculator.sum(1, 1);
+        int sum = Calculator.add(1, 1);
         System.out.println("1 + 1 = " + sum);
-        int subtraction = Calculator.subtraction(5, 4);
+        int subtraction = Calculator.subtract(5, 4);
         System.out.println("5 - 4 = " + subtraction);
-        int multiplication = Calculator.multiplication(3, 3);
+        int multiplication = Calculator.multiply(3, 3);
         System.out.println("3 * 3 = " + multiplication);
-        int division1 = Calculator.division(10, 2);
+        int division1 = Calculator.divide(10, 2);
         System.out.println("10 / 2 = " + division1);
-        int division2 = Calculator.division(5, 0);
-        System.out.println("5 / 0 = " + division2);
+        System.out.println("5 / 0 = " + Calculator.divide(5, 0));
     }
 }
